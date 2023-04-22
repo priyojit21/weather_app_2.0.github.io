@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <form action="">
+    <div class="searchBox">
+
+      <input class="searchInput" type="search" id="search" placeholder="Search">
+      <button class="searchButton" type="submit" href="#">
+          <i class="material-icons">
+              search
+          </i>
+      </button>
+  </div>
+  </form>
+
+  <header class="header">
+    <div class="header-left">
+      <div id="main_img">
+        <img class="weather-icon lg" src="https://openweathermap.org/img/wn/10d@2x.png" alt="sun">
+      </div>
+      <div class="header-current-temp">
+        <span id="temp">31</span>&deg;
+      </div>
+    </div>
+    <div class="header-right">
+
+      <div class="info-group">
+        <div class="label">
+          High
+        </div>
+        <div><span id="temp-max">32</span>&deg;</div>
+      </div>
+
+      <div class="info-group">
+        <div class="label">
+          Feels Like
+        </div>
+        <div><span id="feels-like">32</span>&deg;</div>
+      </div>
+
+      <div class="info-group">
+        <div class="label">
+          Wind
+        </div>
+        <div><span id="wind">32Km/h</span></div>
+      </div>
+
+      <div class="info-group">
+        <div class="label">
+          Low
+        </div>
+        <div><span id="temp-min">32</span>&deg;</div>
+      </div>
+
+      <div class="info-group">
+        <div class="label">
+          Humidity
+        </div>
+        <div><span id="humidity">32%</span></div>
+      </div>
+
+      <div class="info-group">
+        <div class="label">
+          Description
+        </div>
+        <div><span id="desc">Clear</span></div>
+      </div>
+
+    </div>
+  </header>
+
+  <section class="section-class">
+    <div class="day_card">
+      <div id="img1">
+        <img class="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png">
+      </div>
+      <div id="name1" class="day_card_day">Monday</div>
+      <div><span id="day1">32</span>&deg;</div>
+    </div>
+
+    <div class="day_card">
+      <div id="img2">
+        <img class="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png">
+      </div>
+      <div id="name2" class="day_card_day">Tuesday</div>
+      <div><span id="day2">32</span>&deg;</div>
+    </div>
+
+    <div class="day_card">
+      <div id="img3">
+        <img class="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png">
+      </div>
+      <div id="name3" class="day_card_day">Wednesday</div>
+      <div><span id="day3">32</span>&deg;</div>
+    </div>
+
+    <div class="day_card">
+      <div id="img4">
+        <img class="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png">
+      </div>
+      <div id="name4" class="day_card_day">Thursday</div>
+      <div><span id="day4">32</span>&deg;</div>
+    </div>
+
+    <div class="day_card">
+      <div id="img5">
+        <img class="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png">
+      </div>
+      <div id="name5" class="day_card_day">Friday</div>
+      <div><span id="day5">32</span>&deg;</div>
+    </div>
+
+    <!-- <div class="day-card">
+      <img class="weather-icon" src="./public/icons/cloud-solid.svg" data-current-icon>
+      <div class="day-card-day">Saturday</div>
+      <div>32&deg;</div>
+    </div>
+
+    <div class="day-card">
+      <img class="weather-icon" src="./public/icons/cloud-solid.svg" data-current-icon>
+      <div class="day-card-day">Sunday</div>
+      <div>32&deg;</div>
+    </div> -->
+  </section>
+
+  <table class="hour-section">
+    <tbody data-hour-section>
+      <tr class="hour-row">
+        <td>
+          <div class="info-group">
+            <div id="foot1" class="label">Thursday</div>
+            <div id="time1">9 AM</div>
+          </div>
+        </td>
+        <td>
+          <div id="foot_img1">
+            <img class="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png">
+          </div>
+        </td>
+        <td>
+          <div class="info-group">
+            <div class="label">Temp</div>
+            <div><span id="g1">31</span>&deg;</div>
+          </div>
+        </td>
+        <td>
+          <div class="info-group">
+            <div class="label">Humidity</div>
+            <div><span id="s1">25</span>%</div>
+          </div>
+        </td>
+        <td>
+          <div class="info-group">
+            <div class="label">Wind</div>
+            <div><span id="w1">31</span>Km/h</div>
+          </div>
+        </td>
+        <td>
+          <div class="info-group">
+            <div class="label">Description</div>
+            <div><span id="de1">Clear</span></div>
+          </div>
+        </td>
+      </tr>
+      <tr class="hour-row">
+        <td>
+          <div class="info-group">
+            <div id="foot2" class="label">Thursday</div>
+            <div>12 PM</div>
+          </div>
+        </td>
+        <td id="foot_img2">
+          <img  class="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png">
+        </td>
+        <td>
+          <div class="info-group">
+            <div class="label">Temp</div>
+            <div><span id="g2">31</span>&deg;</div>
+          </div>
+        </td>
+        <td>
+          <div class="info-group">
+            <div class="label">Humidity</div>
+            <div><span id="s2">25</span>%</div>
+          </div>
+        </td>
+        <td>
+          <div class="info-group">
+            <div class="label">Wind</div>
+            <div><span id="w2">31</span>Km/h</div>
+          </div>
+        </td>
+        <td>
+          <div class="info-group">
+            <div class="label">Description</div>
+            <div><span id="de2">Clear</span></div>
+          </div>
+        </td>
+      </tr>
+      <tr class="hour-row">
+        <td>
+          <div class="info-group">
+            <div id="foot3" class="label">Thursday</div>
+            <div>3 PM</div>
+          </div>
+        </td>
+        <td>
+          <div id="foot_img3">
+            <img  class="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png">
+          </div>
+        </td>
+        <td>
+          <div class="info-group">
+            <div class="label">Temp</div>
+            <div><span id="g3">31</span>&deg;</div>
+          </div>
+        </td>
+        <td>
+          <div class="info-group">
+            <div class="label">Humidity</div>
+            <div><span id="s3">25</span>%</div>
+          </div>
+        </td>
+        <td>
+          <div class="info-group">
+            <div class="label">Wind</div>
+            <div><span id="w3">31</span>Km/h</div>
+          </div>
+        </td>
+        <td>
+          <div class="info-group">
+            <div class="label">Description</div>
+            <div><span id="de3">Clear</span></div>
+          </div>
+        </td>
+      </tr>
+      <tr class="hour-row">
+        <td>
+          <div class="info-group">
+            <div id="foot4" class="label">Thursday</div>
+            <div>6 PM</div>
+          </div>
+        </td>
+        <td id="foot_img4">
+          <img  class="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png">
+        </td>
+        <td>
+          <div class="info-group">
+            <div class="label">Temp</div>
+            <div><span id="g4">31</span>&deg;</div>
+          </div>
+        </td>
+        <td>
+          <div class="info-group">
+            <div class="label">Humidity</div>
+            <div><span id="s4">25</span>%</div>
+          </div>
+        </td>
+        <td>
+          <div class="info-group">
+            <div class="label">Wind</div>
+            <div><span id="w4">31</span>Km/h</div>
+          </div>
+        </td>
+        <td>
+          <div class="info-group">
+            <div class="label">Description</div>
+            <div><span id="de4">Clear</span></div>
+          </div>
+        </td>
+      </tr>
+      <tr class="hour-row">
+        <td>
+          <div class="info-group">
+            <div id="foot5" class="label">Thursday</div>
+            <div>9 PM</div>
+          </div>
+        </td>
+        <td id="foot_img5">
+          <img  class="weather-icon" src="https://openweathermap.org/img/wn/10d@2x.png">
+        </td>
+        <td>
+          <div class="info-group">
+            <div class="label">Temp</div>
+            <div><span id="g5">31</span>&deg;</div>
+          </div>
+        </td>
+        <td>
+          <div class="info-group">
+            <div class="label">Humidity</div>
+            <div><span id="s5">25</span>%</div>
+          </div>
+        </td>
+        <td>
+          <div class="info-group">
+            <div class="label">Wind</div>
+            <div><span id="w5">31</span>Km/h</div>
+          </div>
+        </td>
+        <td>
+          <div class="info-group">
+            <div class="label">Description</div>
+            <div><span id="de5">Clear</span></div>
+          </div>
+        </td>
+      </tr>
+      <!-- <tr class="hour-row">
+        <td>
+          <div class="info-group">
+            <div id="foot1" class="label">Thursday</div>
+            <div>3 PM</div>
+          </div>
+        </td>
+        <td>
+          <img class="weather-icon" src="./public/icons/bolt-solid.svg">
+        </td>
+        <td>
+          <div class="info-group">
+            <div class="label">Temp</div>
+            <div>31&deg;</div>
+          </div>
+        </td>
+        <td>
+          <div class="info-group">
+            <div class="label">FL Temp</div>
+            <div>25&deg;</div>
+          </div>
+        </td>
+        <td>
+          <div class="info-group">
+            <div class="label">Wind</div>
+            <div>31&deg;</div>
+          </div>
+        </td>
+        <td>
+          <div class="info-group">
+            <div class="label">Precipitation</div>
+            <div>31&deg;</div>
+          </div>
+        </td>
+      </tr> -->
+    </tbody>
+  </table>
+
+  <!-- <form action="">
+    <input type="search" id="search" placeholder="Search by city name">
+    <button type="submit">Click</button>
+  </form>
+  <div> -->
+    <h3>Time</h3>
+    <h4 id="timer">9:30</h4>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
